@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import Credential from '../../model/credential';
 
 /**
  * Generated class for the CredentialRowComponent component.
@@ -16,7 +17,6 @@ export class CredentialRowComponent {
   credential: Credential
 
   constructor() {
-    this.credential = {title: "Peperoni"} as Credential;
   }
 
 }

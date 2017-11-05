@@ -1,4 +1,4 @@
-class Credential {
+export default class Credential {
     id : number;
     title : string;
     url : string;

@@ -12,6 +12,9 @@
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <credential-row [credential]=item ></credential-row>
     </button>
+    <button ion-item *ngFor="let itemFolder of itemsFolder" (click)="itemTapped($event, itemFolder)">
+      <folder-row [folder]=itemFolder ></folder-row>
+    </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>
     You navigated here from <b>{{selectedItem.title}}</b>

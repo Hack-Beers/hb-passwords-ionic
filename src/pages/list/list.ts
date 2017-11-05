@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import Credential from '../../model/credential';
+import Folder from '../../model/folder';
 
 @Component({
   selector: 'page-list',
@@ -9,6 +11,7 @@ export class ListPage {
   selectedItem: any;
   icons: string[];
   items: Credential[];
+  itemsFolder: Folder[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
@@ -21,9 +24,16 @@ export class ListPage {
     this.items = [];
     for (let i = 1; i < 11; i++) {
       this.items.push({
-        title: 'Item ' + i,
-        user: 'This is item #' + i
+        title: 'Credential ' + i,
+        user: 'This is credential #' + i
       } as Credential);
+    }
+
+    this.itemsFolder = [];
+    for (let j = 1; j < 4; j++) {
+      this.itemsFolder.push({
+        name: 'Folder ' + j
+      } as Folder);
     }
   }
 
