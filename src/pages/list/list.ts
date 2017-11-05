@@ -35,12 +35,12 @@ export class ListPage {
       } as Credential);
     }
 
-    this.itemsFolder = [];
+    /*this.itemsFolder = [];
     for (let j = 1; j < 4; j++) {
       this.itemsFolder.push({
         name: 'Folder ' + j
       } as Folder);
-    }
+    }*/
   }
 
   itemTapped(event, item) {

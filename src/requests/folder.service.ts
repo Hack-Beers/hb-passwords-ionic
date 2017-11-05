@@ -10,7 +10,7 @@ export class FolderService {
     ) { }
 
     getFolders() {
-        return this.http.get('/api/folder/')
-            .map((res: Response) => res.json().results as Folder[]);
+        return this.http.get('/api/folders/')
+            .map((res: Response) => res.json() as Folder[]);
     }
 }
