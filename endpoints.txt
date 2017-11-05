@@ -1,0 +1,10 @@
+/credentials POST to create a credential
+/credentials PUT/{id} to edit a credential
+/credentials/{id} GET by id to get a credential
+/credentials GET to get all the credentials
+/credentials?folder={folderId}
+
+/folder GET all folders
+/folder/{id} GET by id
+/folder POST to create a folder
+/folder PUT to update a folder
