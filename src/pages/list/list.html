@@ -10,11 +10,10 @@
 <ion-content>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
+      <credential-row [credential]=item ></credential-row>
+    </button>
+    <button ion-item *ngFor="let itemFolder of itemsFolder" (click)="itemTapped($event, itemFolder)">
+      <folder-row [folder]=itemFolder ></folder-row>
     </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>
